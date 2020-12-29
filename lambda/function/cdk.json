@@ -1,0 +1,5 @@
+{
+  "app": "node ./cdk/sample-codecommit.js",
+  "output": "/tmp/cdk.out",
+  "requireApproval": "never"
+}
