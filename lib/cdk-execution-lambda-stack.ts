@@ -28,6 +28,7 @@ export class CdkExecutionLambdaStack extends Stack {
       code: Code.fromBucket(layerAsset.bucket, layerAsset.s3ObjectKey),
     });
 
+    // Lambda Role
     const lambdaRole = new iam.Role(this, 'cdkExecutionLambda/lambdaRole', {
       assumedBy: new iam.ServicePrincipal('lambda.amazonaws.com'),
       managedPolicies: [
