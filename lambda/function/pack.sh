@@ -20,7 +20,6 @@ yarn run build
 mkdir ./out
 mkdir ./out/cdk
 mkdir ./out/cdk/stack
-mkdir ./out/cdk/buildspec
 
 rm -rf ./node_modules && yarn install --production=true
 cp ./cdk.json ./out
